@@ -94,3 +94,31 @@ SELECT
     churned_per_subscription as churn_volume,
     ROUND(CAST(churned_per_subscription as DECIMAL) / CAST(total_per_subscription as DECIMAL) * 100,2) churn_rate
 FROM ChurnedCustomersPerSubscription;
+
+-- Churn concentration by region - churn rate
+WITH ChurnedCustomersByRegion as (
+    SELECT
+        region,
+        SUM(CASE
+            WHEN churned = 1 THEN 1
+            ELSE 0 END) as number_of_churned,
+        COUNT(customer_id) as total_customers
+    FROM netflix_customers
+    GROUP BY region
+)
+
+SELECT 
+    region,
+    ROUND(CAST(number_of_churned as DECIMAL) / CAST(total_customers as DECIMAL) * 100,2) as churn_rate
+FROM ChurnedCustomersByRegion
+ORDER BY churn_rate DESC;
+
+-- Churn concentration by region - lost revenue
+SELECT
+    region,
+    SUM(CASE
+        WHEN churned = 1 THEN monthly_fee
+        ELSE 0 END) as lost_revenue
+FROM netflix_customers
+GROUP BY region
+ORDER BY lost_revenue DESC;

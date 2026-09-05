@@ -1,5 +1,5 @@
 # Netflix Churn Analysis
-Customer churn analysis using SQL, Excel, and PowerBI, aiming to identifying the key factors associated with customer churn and uncovering actionable insights to improve customer retention.
+Customer churn analysis using SQL (PostgreSQL), Excel, and PowerBI, aiming to identifying the key factors associated with customer churn and uncovering actionable insights to improve customer retention.
 
 Note: This is a simulated dataset ("Netflix Customer Churn" by Abdul Wadood - Kaggle), and does not reflect Netflix's actual reported churn figures.
 
@@ -58,6 +58,18 @@ Before analysis, the dataset was checked for structural integrity:
 |Basic|1027|61.83|
 |Premium|740|43.71|
 |Standard|748|45.44|
+
+##### Region
+- Both churn rate and lost revenue are fairly consistent across all regions, with no single region standing out as a major outlier - similar to what was seen with age and gender. 
+
+|Region|Churn Rate|Monthly lost Revenue|
+|---|---|---|
+|Europe|51.67|5885.52|
+|South America|51.43|5873.51|
+|Asia|50.65|5567.74|
+|Oceania|50.07|5127.17|
+|North America|49.47|5523.79|
+|Africa|48.32|5032.12|
 
 ## Excel 
 
