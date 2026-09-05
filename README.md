@@ -17,6 +17,7 @@ Before analysis, the dataset was checked for structural integrity:
 - However, this 50.3% can act as a baseline. This baseline helps to identify where the biggest problems and opportunities lie within specific customer segments, such as: subscription types, regions, devices, etc.  
 
 #### Churn Concentration 
+##### Profiles
 - Churn is notably lower for account with 4-5 profiles (37.54%-40.62%), compared to accounts with 1-3 profiles (57.44%-58.64%).
 - This suggests accounts with 4-5 profiles specifically may be less likely to cancel, likely due to shared/household use, though this is entirely hyothetical and not something the data itself confirms. 
 
