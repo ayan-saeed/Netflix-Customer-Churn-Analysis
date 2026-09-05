@@ -71,6 +71,18 @@ Before analysis, the dataset was checked for structural integrity:
 |North America|49.47|5523.79|
 |Africa|48.32|5032.12|
 
+##### Watch Hours
+- Watch hours show by far the strongest relationship with churn found in this analysis. Customers watching 0-5 hours churn 79.25%, compared to just 0.90% for those watching 31+ hours. 
+- Low watch hours might be an early warning sign of churn, not just something that happens alongside it. A customer's viewing may start dropping off before actually cancelling their subscription, meaning this metric could be used to help flag at-risk customers ahead of time.
+- Customers flagged for having low watch hours may get personalised recommendations of movies/tv shows based on their favourite genres, in order to boost engagement. 
+
+|Watch Hours|Churn Rate|
+|---|---|
+|0-5|79.25|
+|6-15|43.64|
+|16-30|17.52|
+|31+|0.90|
+
 ## Excel 
 
 ## PowerBI

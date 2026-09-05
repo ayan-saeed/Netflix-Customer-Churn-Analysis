@@ -122,3 +122,23 @@ SELECT
 FROM netflix_customers
 GROUP BY region
 ORDER BY lost_revenue DESC;
+
+-- Churn concentration by watch hours
+WITH ChurnedCustomersByWatchHours as (
+    SELECT 
+        CASE WHEN watch_hours >= 0 and watch_hours < 6 THEN '0-5'
+            WHEN watch_hours >= 6 and watch_hours < 16 THEN '6-15'
+            WHEN watch_hours >= 16 and watch_hours < 31 THEN '16-30'
+            WHEN watch_hours >= 31 THEN '31+'
+        END AS watch_hours_bracket,
+        COUNT(customer_id) as total_customers,
+        SUM(CASE WHEN churned = 1 THEN 1 ELSE 0 END) as customers_churned
+    FROM netflix_customers
+    GROUP BY watch_hours_bracket
+)
+
+SELECT 
+    watch_hours_bracket,
+    ROUND(CAST(customers_churned as DECIMAL) / CAST(total_customers as DECIMAL) * 100,2) as churn_rate
+FROM ChurnedCustomersByWatchHours
+ORDER BY churn_rate DESC;
