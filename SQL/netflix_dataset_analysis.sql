@@ -40,3 +40,22 @@ SELECT
 FROM ChurnedCustomersPerProfile
 ORDER BY number_of_churned;
 
+-- Churn concentration for age and demographic
+WITH ChurnedCustomersPerAgeGroup as(
+    SELECT
+        CASE WHEN age >= 18 and age <= 25 THEN '18-25'
+            WHEN age >= 26 and age <= 40 THEN '26-40'
+            WHEN age >= 41 and age <= 60 THEN '41-60'
+            WHEN age >= 61 THEN '61+'
+        END AS age_bracket,
+        COUNT(customer_id) as total_customers,
+        SUM(CASE WHEN churned = 1 THEN 1 ELSE 0 END) as customers_churned
+    FROM netflix_customers
+    GROUP BY age_bracket
+)
+
+SELECT 
+    age_bracket,
+    ROUND((CAST(customers_churned as DECIMAL) / CAST(total_customers as DECIMAL)) * 100,2) as churn_rate
+FROM ChurnedCustomersPerAgeGroup
+ORDER BY age_bracket;
