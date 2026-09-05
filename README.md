@@ -1,4 +1,4 @@
-# Netflix-Customer-Churn-Analysis
+# Netflix Churn Analysis
 Customer churn analysis using SQL, Excel, and PowerBI, aiming to identifying the key factors associated with customer churn and uncovering actionable insights to improve customer retention.
 
 Note: This is a simulated dataset ("Netflix Customer Churn" by Abdul Wadood - Kaggle), and does not reflect Netflix's actual reported churn figures.
