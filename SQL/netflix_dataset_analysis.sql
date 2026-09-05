@@ -76,3 +76,21 @@ SELECT
     gender,
     ROUND((CAST(churned_for_demographic as DECIMAL) / CAST(total_for_demographic as DECIMAL)) * 100, 2) as churn_rate
 FROM ChurnedCustomersPerDemo;
+
+-- Churn concentration for subscription tier
+WITH ChurnedCustomersPerSubscription as(
+    SELECT
+        subscription_type,
+        SUM(CASE
+            WHEN churned = 1 THEN 1
+            ELSE 0 END) as churned_per_subscription,
+        COUNT(customer_id) as total_per_subscription
+    FROM netflix_customers
+    GROUP BY subscription_type
+)
+
+SELECT 
+    subscription_type,
+    churned_per_subscription as churn_volume,
+    ROUND(CAST(churned_per_subscription as DECIMAL) / CAST(total_per_subscription as DECIMAL) * 100,2) churn_rate
+FROM ChurnedCustomersPerSubscription;

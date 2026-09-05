@@ -49,6 +49,16 @@ Before analysis, the dataset was checked for structural integrity:
 
 - This suggests the age's and demographic of the customers are not a meaningful driver of churn in this dataset. 
 
+##### Subscription Tier
+- Customers who bought the Basic subscription, churn at the highest rate (61.83%) and also account for the highest churn volume (1027 customers) - which is more than the Standard (748) or Premium (740) indivisually. This makes the Basic subscription tier the largest single contributor to customer loss in this dataset, both relatively and in absolute numbers.
+- A possible hypothesis as to why the Basic subscribers churn at the highest rate and volume, may be due to its lower price point, attracting customers who are likely using the subscrption as a trial or as a casual user, making them naturally quicker to cancel than someone on a pricier, more committed plan. 
+
+|Subscription Type|Churn Volume|Churn Rate|
+|---|---|---|
+|Basic|1027|61.83|
+|Premium|740|43.71|
+|Standard|748|45.44|
+
 ## Excel 
 
 ## PowerBI
