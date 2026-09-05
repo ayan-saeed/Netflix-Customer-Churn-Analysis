@@ -30,7 +30,7 @@ Before analysis, the dataset was checked for structural integrity:
 |2|57.44|
 
 ##### Age and Demographic
-- Churn rate is nearly identical across all age brackets (49.1%-51.55%), closely matching the overall 50.3% baseline. This suggests age is not a meaningful driver of churn in this dataset. 
+- Churn rate is nearly identical across all age brackets (49.1%-51.55%), closely matching the overall 50.3% baseline.
 
 |Age Bracket|Churn Rate|
 |---|---|
@@ -39,7 +39,15 @@ Before analysis, the dataset was checked for structural integrity:
 |41-60|51.55|
 |61+|49.12|
 
+- The same conclusion can be made for the demographic of the customers. The churn rate is almost identical across all 3 gender groups. 
 
+|Gender|Churn Rate|
+|---|---|
+|Other|49.79|
+|Male|50.00|
+|Female|51.08|
+
+- This suggests the age's and demographic of the customers are not a meaningful driver of churn in this dataset. 
 
 ## Excel 
 
