@@ -105,4 +105,9 @@ The tables in this section are pivot tables created from the original dataset to
 
 ![Churn Rate by Last Login](images/last_login_churn_rate.png)
 
+### Watch Time Grouping
+- The `avg_watch_time_per_day` variable contained a wide range of indivisual values, making it difficult to identify clear patterns when visualised in PowerBI. Therefore, in order to improve readability and make the analysis more meaningful, the values were grouped into the following ranges in Excel: 
+
+![Watch Time Groups](images/Screenshot%202026-09-07%20180254.png)
+
 ## PowerBI
