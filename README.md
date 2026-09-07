@@ -111,10 +111,14 @@ The tables in this section are pivot tables created from the original dataset to
 ![Watch Time Groups](images/Screenshot%202026-09-07%20180254.png)
 
 ## Power BI
-The Power BI dhasboard brings together the key findings from the SQL and Excel analysis into an interactive visualisation of customer churn. 
+The Power BI dashboard brings together the key findings from the SQL and Excel analysis into an interactive visualisation of customer churn. 
 
 ### Dashboard
 
 ![Netflix Customer Churn Dashboard](images/Netflix-Customer-Churn-Breakdown.png)
 
-### Final Conclusions and Improvements
+### Summary
+- The analysis found that customer engagement metrics - specifically watch hours and login recency - showed the greatest associations with churn, whereas factors such as age, gender, device, and region showed relatively little variation in churn rates.
+- Judging by the line chart for churn rate by login recency, it shows a sudden spike around day 30, after which churn remains consistently high. This suggests that customers who have not logged in for around 30 days or more, may be at a higher risk of churn.
+- Using this data, we could send targeted content notifications, such as movie/tv show recommendations based on previously watched content by the user, to customers who are approaching 30 days of inactivity.
+- A similar pattern can be seen with watch hours, where lower engagement is strongly assocated with higher churn. 
