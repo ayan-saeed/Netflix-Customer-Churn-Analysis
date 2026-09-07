@@ -4,10 +4,10 @@ Customer churn analysis using SQL (PostgreSQL), Excel, and PowerBI, aiming to id
 Note: This is a simulated dataset ("Netflix Customer Churn" by Abdul Wadood - Kaggle), and does not reflect Netflix's actual reported churn figures.
 
 ## Repository Structure
-- '/SQL' - PostgreSQL queries used for churn analysis and data exploration
-- '/Excel' - Formula-based analysis
-- '/PowerBI' - Interactive dashboard for visualising churn trends
-- '/Dataset' - Raw dataset used for this project
+- `/SQL` - PostgreSQL queries used for churn analysis and data exploration
+- `/Excel` - Formula-based analysis
+- `/PowerBI` - Interactive dashboard for visualising churn trends
+- `/Dataset` - Raw dataset used for this project
 
 ## SQL
 ### Data Validation 
