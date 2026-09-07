@@ -1,5 +1,5 @@
 # Netflix Churn Analysis
-Customer churn analysis using SQL (PostgreSQL), Excel, and PowerBI, aiming to identify the key factors associated with customer churn and uncovering actionable insights to improve customer retention.
+Customer churn analysis using SQL (PostgreSQL), Excel, and PowerBI, aiming to identify the key factors associated with customer churn and uncover actionable insights to improve customer retention.
 
 Note: This is a simulated dataset ("Netflix Customer Churn" by Abdul Wadood - Kaggle), and does not reflect Netflix's actual reported churn figures.
 
@@ -101,8 +101,24 @@ The tables in this section are pivot tables created from the original dataset to
 ![Churn Rate by Device](images/devices_churn_rate.png)
 
 ##### Last Login
-- Churn rate rises sharply and consistently with days since last login - from 12% at 0-6 days, up to 79% at 42-48 days, before leveling off around 75% at the highest brackets. This, alongside watch hours, is one of the strongest contributors to churn.
+- Churn rate rises sharply and consistently with days since last login - from 12% at 0-6 days, up to 79% at 42-48 days, before leveling off around 75% at the highest brackets. This, alongside watch hours, is one of the strongest factors associated with churn.
 
 ![Churn Rate by Last Login](images/last_login_churn_rate.png)
 
-## PowerBI
+### Watch Time Grouping
+- The `avg_watch_time_per_day` variable contained a wide range of individual values, making it difficult to identify clear patterns when visualised in PowerBI. Therefore, in order to improve readability and make the analysis more meaningful, the values were grouped into the following ranges in Excel: 
+
+![Watch Time Groups](images/Screenshot%202026-09-07%20180254.png)
+
+## Power BI
+The Power BI dashboard brings together the key findings from the SQL and Excel analysis into an interactive visualisation of customer churn. 
+
+### Dashboard
+
+![Netflix Customer Churn Dashboard](images/Netflix-Customer-Churn-Breakdown.png)
+
+### Summary
+- The analysis found that customer engagement metrics - specifically watch hours and login recency - showed the greatest associations with churn, whereas factors such as age, gender, device, and region showed relatively little variation in churn rates.
+- Judging by the line chart for churn rate by login recency, it shows a sudden spike around day 30, after which churn remains consistently high. This suggests that customers who have not logged in for around 30 days or more, may be at a higher risk of churn.
+- Using this data, we could send targeted content notifications, such as movie/tv show recommendations based on previously watched content by the user, to customers who are approaching 30 days of inactivity.
+- A similar pattern can be seen with watch hours, where lower engagement is strongly assocated with higher churn. 
