@@ -111,3 +111,5 @@ The tables in this section are pivot tables created from the original dataset to
 ![Watch Time Groups](images/Screenshot%202026-09-07%20180254.png)
 
 ## PowerBI
+
+![Netflix Customer Churn Dashboard](images/Netflix-Customer-Churn-Breakdown.png)
