@@ -1,5 +1,5 @@
 # Netflix Churn Analysis
-Customer churn analysis using SQL (PostgreSQL), Excel, and PowerBI, aiming to identify the key factors associated with customer churn and uncovering actionable insights to improve customer retention.
+Customer churn analysis using SQL (PostgreSQL), Excel, and PowerBI, aiming to identify the key factors associated with customer churn and uncover actionable insights to improve customer retention.
 
 Note: This is a simulated dataset ("Netflix Customer Churn" by Abdul Wadood - Kaggle), and does not reflect Netflix's actual reported churn figures.
 
@@ -113,3 +113,5 @@ The tables in this section are pivot tables created from the original dataset to
 ## PowerBI
 
 ![Netflix Customer Churn Dashboard](images/Netflix-Customer-Churn-Breakdown.png)
+
+### Final Conclusions and Improvements
