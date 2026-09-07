@@ -98,4 +98,9 @@ Before analysis, the dataset was checked for structural integrity:
 
 ![Churn Rate by Device](images/devices_churn_rate.png)
 
+##### Last Login
+- Churn rate rises sharply and consistently with days since last login - from 12% at 0-6 days, up to 79% at 42-48 days, before leveling off around 75% at the highest brackets. This, alongside watch hours, is one of the strongest contributors to churn.
+
+![Churn Rate by Last Login](images/last_login_churn_rate.png)
+
 ## PowerBI
