@@ -1,5 +1,5 @@
 # Netflix Churn Analysis
-Customer churn analysis using SQL (PostgreSQL), Excel, and PowerBI, aiming to identifying the key factors associated with customer churn and uncovering actionable insights to improve customer retention.
+Customer churn analysis using SQL (PostgreSQL), Excel, and PowerBI, aiming to identify the key factors associated with customer churn and uncovering actionable insights to improve customer retention.
 
 Note: This is a simulated dataset ("Netflix Customer Churn" by Abdul Wadood - Kaggle), and does not reflect Netflix's actual reported churn figures.
 
@@ -19,7 +19,7 @@ Before analysis, the dataset was checked for structural integrity:
 #### Churn Concentration 
 ##### Profiles
 - Churn is notably lower for account with 4-5 profiles (37.54%-40.62%), compared to accounts with 1-3 profiles (57.44%-58.64%).
-- This suggests accounts with 4-5 profiles specifically may be less likely to cancel, likely due to shared/household use, though this is entirely hyothetical and not something the data itself confirms. 
+- This suggests accounts with 4-5 profiles specifically may be less likely to cancel, likely due to shared/household use, though this is entirely hypothetical and not something the data itself confirms. 
 
 |Number of Profiles|Churn Rate|
 |---|---|
@@ -47,11 +47,11 @@ Before analysis, the dataset was checked for structural integrity:
 |Male|50.00|
 |Female|51.08|
 
-- This suggests the age's and demographic of the customers are not a meaningful driver of churn in this dataset. 
+- This suggests the ages and demographic of the customers are not a meaningful driver of churn in this dataset. 
 
 ##### Subscription Tier
-- Customers who bought the Basic subscription, churn at the highest rate (61.83%) and also account for the highest churn volume (1027 customers) - which is more than the Standard (748) or Premium (740) indivisually. This makes the Basic subscription tier the largest single contributor to customer loss in this dataset, both relatively and in absolute numbers.
-- A possible hypothesis as to why the Basic subscribers churn at the highest rate and volume, may be due to its lower price point, attracting customers who are likely using the subscrption as a trial or as a casual user, making them naturally quicker to cancel than someone on a pricier, more committed plan. 
+- Customers who bought the Basic subscription, churn at the highest rate (61.83%) and also account for the highest churn volume (1027 customers) - which is more than the Standard (748) or Premium (740) individually. This makes the Basic subscription tier the largest single contributor to customer loss in this dataset, both relatively and in absolute numbers.
+- A possible hypothesis as to why the Basic subscribers churn at the highest rate and volume, may be due to its lower price point, attracting customers who are likely using the subscription as a trial or as a casual user, making them naturally quicker to cancel than someone on a pricier, more committed plan. 
 
 |Subscription Type|Churn Volume|Churn Rate|
 |---|---|---|
