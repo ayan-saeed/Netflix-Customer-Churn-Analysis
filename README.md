@@ -94,7 +94,8 @@ Before analysis, the dataset was checked for structural integrity:
 #### Churn Concentration 
 ##### Devices
 - Churn rate is nearly identical across all devices (49%-52%), consistent with the flat pattern seen in age, gender, and region.
-- Therefore, the device a customer uses is not a meaningful driver of churn. 
+- Therefore, the device a customer uses is not a meaningful driver of churn.
+
 ![Churn Rate by Device](images/devices_churn_rate.png)
 
 ## PowerBI
