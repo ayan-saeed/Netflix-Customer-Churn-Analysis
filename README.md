@@ -92,7 +92,7 @@ Before analysis, the dataset was checked for structural integrity:
 ## Excel 
 
 #### Churn Concentration 
-- The tables in this section are pivot tables created from the original dataset to further explore and analyse customer churn across different factors. 
+The tables in this section are pivot tables created from the original dataset to further explore and analyse customer churn across different factors. 
 
 ##### Devices
 - Churn rate is nearly identical across all devices (49%-52%), consistent with the flat pattern seen in age, gender, and region.
